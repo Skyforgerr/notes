@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Index</title>
+    <title>Главная</title>
+    <!-- Тут можно сделать через тимлиф разные стилизации для страницы относительно выбранной пользователем -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header th:insert="blocks/header :: header"></header>
+    <main>
 
+    </main>
+    <footer th:insert=""></footer>
 </body>
 </html>
