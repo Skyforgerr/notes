@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <!-- Тут можно сделать через тимлиф разные стилизации для страницы относительно выбранной пользователем -->
-    <link rel="stylesheet" href="style.css">
+    <link th:href="@{/style.css}" rel="stylesheet">
 </head>
 <body>
     <header th:insert="blocks/header :: header"></header>
     <main>
 
     </main>
-    <footer th:insert=""></footer>
+    <footer th:insert="blocks/footer :: footer"></footer>
 </body>
 </html>
