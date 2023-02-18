@@ -45,3 +45,8 @@ a:hover {
     text-decoration:none;
     cursor:pointer;
 }
+footer{
+    background-color: whitesmoke;
+    font-size: 1.7vh;
+    height: 25vh;
+}

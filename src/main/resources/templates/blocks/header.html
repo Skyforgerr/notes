@@ -1,0 +1,22 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+<header xmlns:th="http://www.thymeleaf.org" th:fragment="header">
+    <!-- Тут идет разновидность навигации для разных пользователей (1 - не авторизованный, 2 - Авторизованный/Админ/Учитель)-->
+    <!-- Роли которые можно использовать: 0 - не авторизован, 1 - ученик, 2 - учитель, 3 - админ -->
+<!--    <ul th:if="${role} == 0">-->
+<!--        <li><a href="">Главная</a></li>-->
+<!--        <li><a href="">Вход</a></li>-->
+<!--    </ul>-->
+    <nav th:if="${role} != 0">
+        <li><a href="">Главная</a></li>
+        <!-- Админская панель для админа -->
+        <li th:if="${role} != 3"><a href="">SuperUser</a></li>
+        <li><a href="">Курсы</a></li>
+        <li><a href="">Расписание</a></li>
+        <li><a href="">Личный Кабинет</a></li>
+    </nav>
+</header>
+</html>
